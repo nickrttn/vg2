@@ -14,15 +14,9 @@ $geel: #ffcc00;
 	padding: 0;
 }
 
-html {
-	max-width: 100%;
-}
-
 body {
 	font: 400 1em/1.45 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: calc(1em + .5vw);
-	display: flex;
-	flex-flow: column nowrap;
 }
 
 h1, h2, h3 {
@@ -52,57 +46,59 @@ img {
 }
 
 body > header {
+	@include outer-container;
+	margin-top: 0;
 	background: $geel;
 }
 
-body > header h1 {
-	font-size: ms(1);
-	margin-top: 0;
-	padding: ms(-2) 0 0 ms(-1);
-}
+// body > header h1 {
+// 	font-size: ms(1);
+// 	margin-top: 0;
+// 	padding: ms(-2) 0 0 ms(-1);
+// }
 
-body > header p:first-of-type {
-	display: none;
-}
+// body > header p:first-of-type {
+// 	display: none;
+// }
 
-body > header nav {
-	display: none;
-	// display: flex;
-	flex-flow: column nowrap;
+// body > header nav {
+// 	display: none;
+// 	// display: flex;
+// 	flex-flow: column nowrap;
 
-	ul {
-		list-style-type: none;
-		flex-basis: 100%;
-	}
+// 	ul {
+// 		list-style-type: none;
+// 		flex-basis: 100%;
+// 	}
 
-	ul li {}
+// 	ul li {}
 
-	ul li a {
-		display: inline-block;
-		width: 100%;
-		background-color: #000;
-		padding: ms(-1) ms(1);
-		border-bottom: 1px solid $geel;
-		color: $geel;
-	}
-}
+// 	ul li a {
+// 		display: inline-block;
+// 		width: 100%;
+// 		background-color: #000;
+// 		padding: ms(-1) ms(1);
+// 		border-bottom: 1px solid $geel;
+// 		color: $geel;
+// 	}
+// }
 
-body > header > button {
-	display: inline-block;
-	appearance: none;
-	width: 50vw;
-	border: none;
-	padding: ms(-1) ms(1);
-	font-family: 'Open Sans';
-	font-size: ms(0);
-	background: #333;
-	color: $geel;
-}
+// body > header > button {
+// 	display: inline-block;
+// 	appearance: none;
+// 	width: 50vw;
+// 	border: none;
+// 	padding: ms(-1) ms(1);
+// 	font-family: 'Open Sans';
+// 	font-size: ms(0);
+// 	background: #333;
+// 	color: $geel;
+// }
 
-body > header form {
-	display: none;
-}
+// body > header form {
+// 	display: none;
+// }
 
-.to-profile {
-	clear: left;
-}
+// .to-profile {
+// 	clear: left;
+// }
