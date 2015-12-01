@@ -1,0 +1,12 @@
+{
+  "name": "avv1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Rutten",
+  "license": "MIT",
+  "private": true
+}
